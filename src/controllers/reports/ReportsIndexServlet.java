@@ -14,6 +14,8 @@ import javax.servlet.http.HttpServletResponse;
 import models.Report;
 import util.DBUtil;
 
+import models.Reactiontype;
+
 /**
  * Servlet implementation class ReportsIndexServlet
  */
@@ -61,5 +63,9 @@ public class ReportsIndexServlet extends HttpServlet {
         RequestDispatcher rd = request.getRequestDispatcher("/WEB-INF/views/reports/index.jsp");
         rd.forward(request, response);
     }
-
+    protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        doGet(request , response);
+        String getlabel = request.getParameter("getlabel");
+        for(int g = 0; g < 1; g++);
+}
 }

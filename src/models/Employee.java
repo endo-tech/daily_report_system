@@ -47,16 +47,16 @@ public class Employee {
     private String password;
 
     @Column(name = "admin_flag", nullable = false)
-    private Integer admin_flag;
+    private Integer admin_flag;//管理者フラグ
 
     @Column(name = "created_at", nullable = false)
-    private Timestamp created_at;
+    private Timestamp created_at;//日時
 
     @Column(name = "updated_at", nullable = false)
-    private Timestamp updated_at;
+    private Timestamp updated_at;//更新日時
 
     @Column(name = "delete_flag", nullable = false)
-    private Integer delete_flag;
+    private Integer delete_flag;//削除フラグ
 
     public Integer getId() {
         return id;
